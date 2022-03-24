@@ -1,0 +1,242 @@
+/*Inicio Estilo Geral*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro' , sans-serif;
+    color: #0000008c;
+    margin: 0;
+    padding: 0;
+}
+
+.container-secao {
+    padding: 40px 20px 0;
+}
+
+.container-largura {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.logo{
+    max-height: 60px;
+}
+
+/*Fim Estilo Geral*/
+
+
+
+/*Inicio Cabeçalho*/
+
+header {
+    background-color: lightseagreen;
+    width: 100%;
+}
+
+header .topo {
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.link-topo {
+    display: flex;
+    justify-content: center;
+}
+
+.link-topo a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.link-topo a:hover {
+    color: darkslategrey;
+}
+
+
+@media (max-width: 426px) {
+
+    header .topo{
+        flex-direction: column;
+    }
+
+    .link-topo {
+        border-top: 1px solid rgba(42, 75, 64, 0.897);
+        width: 100%;
+        justify-content: space-around;
+
+    }
+
+    .link-topo a {
+        font-size: 12px;
+    }
+    
+}
+
+/*Fim Cabeçalho*/
+
+
+/*Conteudo Inicio*/
+
+main{
+    margin-bottom: 60px;
+}
+
+.fundo-titulo{
+    background-image: url('../assets/recepcao.png');
+    background-size: cover;
+    height: 500px;
+}
+
+.titulo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.titulo h1 {
+    color: #ffff;
+    font-size: 38px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.descricoes {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.descricoes h3, .descricoes h2  {
+    margin: 0;
+}
+
+.descricoes-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricoes-sobre img{
+    height: 250px;
+}
+
+.descricoes-sobre h3 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.imagens-especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.imagens-especialidades figure {
+    margin: 20px;
+    box-shadow: 2px 2px 10px #4e4e4e8c;
+    border-radius: 3px;
+    width: calc(33% - 40px);
+}
+
+.imagens-especialidades img {
+   width: 100%;
+}
+
+.imagens-especialidades figcaption {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#especialidades .link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#especialidades .link a {
+    padding: 10px 20px;
+    background-color: lightseagreen;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 600;
+}
+
+#especialidades .link a:hover{
+    color: darkslategrey;
+}
+
+
+
+@media (max-width: 426px) {
+
+    .fundo-titulo {
+        height: 200px;
+    }
+
+    .titulo h1 {
+        font-size: 24px;
+    }
+    
+    .descricoes-sobre img {
+        display: none;
+    }
+    
+    .imagens-especialidades figure {
+        width: calc(100% - 40px);
+    }
+
+}
+
+@media (min-width: 427px) AND (max-width: 769px) {
+    
+    .fundo-titulo {
+        height: 300px;
+    }
+
+    .descricoes-sobre img {
+        display: none;
+    }
+
+    .imagens-especialidades figure {
+        width: calc(50% - 40px);
+    }
+
+}
+
+@media (min-width: 770px) AND (max-width: 1025px) {
+
+    .fundo-titulo {
+        height: 400px;
+    }
+
+}
+
+
+
+/*Conteudo Fim*/
+
+
+/* Rodape Inicio*/
+
+footer {
+    background-color:  rgb(23, 117, 113);
+    color: #ffff;
+    padding: 20px;
+}
+
+.rodape-secao{
+    text-align: center;
+}
+
+/* Rodape Fim*/
